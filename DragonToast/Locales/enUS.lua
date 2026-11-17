@@ -104,6 +104,7 @@ L["Toggle addon on/off"] = true
 L["Open settings panel"] = true
 L["Toggle anchor lock (drag to move)"] = true
 L["Show a test toast"] = true
+L["Queue a burst of test loot (default 30; max 100)"] = true
 L["Test item stacking (3 rapid items)"] = true
 L["Test XP accumulation"] = true
 L["Test gold accumulation"] = true
@@ -139,6 +140,8 @@ L["Anchor unlocked -- drag to reposition"] = true
 -- DragonToast/Display/TestToasts.lua
 L["Test mode started"] = true
 L["Test mode stopped"] = true
+L["Usage: /dt massloot [count] (1-100, default 30)."] = true
+L["Queued %d mass loot test toasts. Use /dt clear to stop."] = true
 L["Unknown test type: "] = true
 L["Usage: /dt test [stack|xp|gold|honor|reputation|reputationloss|all]"] = true
 

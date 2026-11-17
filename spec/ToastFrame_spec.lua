@@ -389,6 +389,7 @@ describe("ToastFrame display", function()
     it("renders and stacks generated gold test toasts without the legacy coin API", function()
         ns.Addon.db.profile.display.goldFormat = "icons"
         mock.LoadToastManager(ns)
+        ns.ToastManager.Initialize()
         local chunk = assert(loadfile("DragonToast/Display/TestToasts.lua"))
         chunk("DragonToast", ns)
 
@@ -455,6 +456,7 @@ describe("ToastFrame display", function()
         assert.equal(0.3, frame.itemName._textColor.g)
         assert.equal(0.3, frame.itemName._textColor.b)
     end)
+
     it("keeps the preview anonymous and independent of the live pool and lifecycle", function()
         local live = frame
         ns.ToastFrame.Release(live)
